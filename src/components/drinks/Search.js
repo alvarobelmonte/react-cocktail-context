@@ -29,10 +29,11 @@ const Search = () => {
             <form className="form" onSubmit={onSubmit} >
                 <input type="text" name="text" placeholder="Search drinks..." 
                         value={text} onChange={onChange} />
-                <input type="submit" value="Search" className="btn btn-primary btn-block"/>
+                <input type="submit" value="Search" className="btn btn-primary" /><br/>
+                { cocktailContext.drinks && cocktailContext.drinks.length > 0 && 
+              <button className="btn btn-light" onClick={cocktailContext.clearDrinks}>Clear</button> }
             </form>
-            { cocktailContext.drinks && cocktailContext.drinks.length > 0 && 
-              <button className="btn btn-light btn-block" onClick={cocktailContext.clearDrinks}>Clear</button> }
+
             
         </div>
     );

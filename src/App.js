@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/layout/Navbar';
-import DrinkProfile from './components/users/DrinkProfile';
+import DrinkProfile from './components/drinks/DrinkProfile';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
 import NotFound from './components/pages/NotFound';

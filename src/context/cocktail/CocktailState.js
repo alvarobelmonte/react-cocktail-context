@@ -17,7 +17,6 @@ const CocktailState = props => {
         drinks: [],
         drink: {},
         ingredients: [],
-        repos: [],
         loading: false
     }
 

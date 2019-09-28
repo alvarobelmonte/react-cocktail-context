@@ -7,8 +7,8 @@ const DrinkItem = ({ drink: {strDrinkThumb, strDrink, idDrink} }) => {
 
         return (
             <div className="card card-drink text-center">
-               <img src={strDrinkThumb} alt="logo" className="round-img" style={{width: '15rem'}} /> 
-               <h1>{strDrink}</h1>
+               <img src={strDrinkThumb} alt="logo" className="round-img" style={{width: '80%'}} /> 
+               <h2>{strDrink}</h2>
                <div>
                    <Link to={`/drink/${idDrink}`} className="btn btn-primary btn-sm my-1">More</Link>
                </div>
