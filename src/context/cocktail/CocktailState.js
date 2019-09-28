@@ -79,6 +79,7 @@ const CocktailState = props => {
                     });
                 }); 
             }
+            return 0;
         });
 
     }
