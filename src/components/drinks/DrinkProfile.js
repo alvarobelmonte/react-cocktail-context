@@ -34,7 +34,7 @@ const DrinkProfile =({match}) => {
                 <div className="card card-profile">
 
                     <div className="all-center">
-                        <img src={strDrinkThumb} alt="thumb" className="round-img" style={{width: '20%'}}/>
+                        <img src={strDrinkThumb} alt="thumb" className="profile-img" style={{width: '20%'}}/>
                         <h1>{strDrink}</h1>
                         <p>{strInstructions}</p>
                     </div>
@@ -50,12 +50,12 @@ const DrinkProfile =({match}) => {
                     {strGlass && <div className="badge badge-dark"> {strGlass}</div>}
                 </div>
                 <div className="card card-profile card-ingredients bg-light">
-                     <h1 className="text-center">Ingredients</h1>
+                     <h1 className="text-left">Ingredients</h1>
                      {ingredients.length > 0 && ingredients.map((ingredient, key) => {
                          return <Fragment key={key}>
-                             <div className="badge badge-dark badge-title">{ingredient.strIngredient}</div>
-                             <h3 className="text-center">{ingredient.strType}</h3>
-                             <p>{ingredient.strDescription}</p>
+                             <div className="badge badge-dark badge-title my-1">{ingredient.strIngredient}</div>
+                             <h3 className="text-left my-2">{ingredient.strType && 'Type - ' + ingredient.strType}</h3>
+                             <p className="my-2">{ingredient.strDescription}</p>
                              </Fragment>
                     })}
                 </div> 

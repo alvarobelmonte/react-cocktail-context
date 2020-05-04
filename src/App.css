@@ -140,7 +140,7 @@ img {
   box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
 }
 .card-profile {
-  margin: 1rem 8rem;
+  margin: 1rem 0%;
 }
 .card-ingredients {
   padding: 5% 10%;
@@ -355,6 +355,12 @@ img {
 .round-img {
   border-radius: 50%;
   border: 0.3rem solid var(--primary-color);
+}
+
+.profile-img {
+  border-radius: 2rem;
+  border: 0.2rem solid var(--primary-color);
+  margin-bottom: 1rem;
 }
 
 /* Forms */
