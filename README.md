@@ -1,4 +1,4 @@
-## About
+## About :cocktail:
 
 This app was developed using React and its Context API
 
